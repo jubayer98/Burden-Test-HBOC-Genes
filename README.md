@@ -4,7 +4,7 @@ This repository contains a dataset for the burden test analysis of hereditary br
 
 ## Dataset Description
 
-- **hboc_gene**: Names the specific gene being analyzed (e.g., BRCA1, BRCA2).
+- **gene**: Names the specific gene being analyzed (e.g., BRCA1, BRCA2).
 - **odds_ratio**: Measures the strength of association between a gene mutation and the risk of developing HBOC. An odds ratio greater than 1 indicates increased risk.
 - **ci_low**: The lower bound of the confidence interval for the odds ratio, indicating the minimum likely value of the odds ratio.
 - **ci_high**: The upper bound of the confidence interval for the odds ratio, indicating the maximum likely value of the odds ratio.
