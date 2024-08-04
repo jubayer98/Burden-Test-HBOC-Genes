@@ -45,7 +45,8 @@ ax2.set_yticks(range(len(other_genes)))
 ax2.set_yticklabels(other_genes['gene'])
 
 # plot horizontal lines for CI
-for i in range(len(other_genes)): ax2.plot([other_genes['ci_low'].iloc[i], other_genes['ci_high'].iloc[i]], [i, i], color='grey', lw=1)
+for i in range(len(other_genes)): 
+  ax2.plot([other_genes['ci_low'].iloc[i], other_genes['ci_high'].iloc[i]], [i, i], color='grey', lw=1)
 
 # plot triangles for odds ratio
 ax2.scatter(other_genes['odds_ratio'], range(len(other_genes)), marker='^', color='black', zorder=3)
@@ -71,7 +72,8 @@ ax.set_yticks(range(len(df)))
 ax.set_yticklabels(df['gene'])
 
 # plot horizontal lines for CI
-for i in range(len(df)): ax.plot([df['ci_low'][i], df['ci_high'][i]], [i, i], color='grey', lw=1)
+for i in range(len(df)): 
+  ax.plot([df['ci_low'][i], df['ci_high'][i]], [i, i], color='grey', lw=1)
 
 # plot triangles for odds ratio
 ax.scatter(df['odds_ratio'], range(len(df)), marker='^', color='black', zorder=3)
